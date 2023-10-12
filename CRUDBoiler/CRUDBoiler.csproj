@@ -1,10 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <Version>0.8.3</Version>
+    <Version>0.6.4</Version>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>CRUDBoiler</Title>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
@@ -14,7 +14,15 @@
     <Authors>Richard Traviolia</Authors>
     <Description>Boilerplate code for creating CRUD enpoints in Azure Functions (isolated)</Description>
     <DebugType>embedded</DebugType>
+    <PackageProjectUrl>https://github.com/rc-traviolia/CRUDBoiler</PackageProjectUrl>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Azure.Functions.Worker" Version="1.19.0" />
